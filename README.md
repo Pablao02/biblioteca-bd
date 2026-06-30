@@ -11,6 +11,24 @@ Desenvolver um banco de dados relacional capaz de controlar:
 - Categorias
 - Empréstimos
 
+## Arquitetura do Banco de Dados
+
+### Tipo de Banco
+
+Foi escolhido um banco de dados **SQL (relacional)**.
+
+### Tecnologia Utilizada
+
+**PostgreSQL**
+
+### Justificativa da Escolha
+
+O PostgreSQL foi escolhido por ser um sistema de gerenciamento de banco de dados relacional robusto, gratuito e amplamente utilizado no mercado.
+
+A utilização de um banco relacional permite organizar os dados através de tabelas relacionadas, garantindo integridade, consistência e facilidade de consulta.
+
+O Sequelize foi utilizado como ORM para facilitar a comunicação entre a aplicação Node.js e o banco de dados.
+
 ## Tecnologias Utilizadas
 
 - Node.js
@@ -19,28 +37,3 @@ Desenvolver um banco de dados relacional capaz de controlar:
 - Sequelize
 
 ## Estrutura do Projeto
-
-```
-biblioteca-bd/
-│
-├── app/
-├── config/
-├── justificativa/
-├── modelagem/
-├── queries/
-├── scripts/
-├── server.js
-└── README.md
-```
-
-## Funcionalidades
-
-- Cadastro de usuários
-- Cadastro de categorias
-- Cadastro de livros
-- Controle de empréstimos
-- Consulta de livros disponíveis
-
-## Autor
-
-Pablo Augusto
