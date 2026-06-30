@@ -9,7 +9,6 @@ const userRoutes = require("./app/routes/userRoutes");
 const bookRoutes = require("./app/routes/bookRoutes");
 const categoryRoutes = require("./app/routes/categoryRoutes");
 const loanRoutes = require("./app/routes/loanRoutes");
-const authRoutes = require("./app/routes/authRoutes");
 
 const app = express();
 
@@ -20,11 +19,17 @@ app.use("/users", userRoutes);
 app.use("/books", bookRoutes);
 app.use("/categories", categoryRoutes);
 app.use("/loans", loanRoutes);
-app.use("/auth", authRoutes);
+
+app.get("/", (req, res) => {
+  res.json({
+    message: "API Biblioteca funcionando!"
+  });
+});
 
 sequelize.sync()
   .then(() => {
     console.log("✅ Banco sincronizado!");
+
     app.listen(process.env.PORT || 3000, () => {
       console.log(`🚀 Servidor rodando na porta ${process.env.PORT || 3000}`);
     });
