@@ -36,4 +36,9 @@ O Sequelize foi utilizado como ORM para facilitar a comunicação entre a aplica
 - PostgreSQL
 - Sequelize
 
-## Estrutura do Projeto
+
+## Vídeo de demonstração
+
+O vídeo de apresentação do projeto pode ser acessado no link abaixo:
+
+https://drive.google.com/SEU-LINK-AQUI
